@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- TAG META definem os metadados, configurações de linguagem as resoluções -->
+    <meta charset="UTF-8"> <!-- qual o tipo de caracteres e quais acentuações serão usadas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Hubballi&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Hubballi&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/54e7a61a67.js" crossorigin="anonymous"></script>
+    <title>Meu Currículo</title>
+    <style>
+        /* ESTILIZAÇÃO DO CABEÇALHO */
+        #cabecalho {
+            background-color: #FAE4C5;
+            /* COR DE FUNDO DO CABEÇALHO */
+            margin-top: 50px;
+            /* MARGEM SUPERIOR */
+            margin-bottom: 50px;
+            /* MARGEM INFERIOR */
+            font-family: "Hubballi", sans-serif; /* TIPO DA FONTE */
+        }
+
+        /* ESTILIZAÇÃO DA DIV NOME E CARGO */
+        #nome-Cargo{
+            background-color: #ffffff; /* COR DE FUNDO */
+            width: 500px; /* LARGURA */
+            margin: 0 auto; /* EM ORDEM ALTERA A MARGEM SUPERIOR, DIREITA, INFERIOR E ESQUERDA */
+            text-align: center; /* ALIHAMENTO HORIZONTAL DO TEXTO */
+        }
+
+        /* ESTILIZAÇÃO DAS MARGENS DO NOME E CARGO */
+        #nome-Cargo h1, h2{
+            margin: 5px;
+        }
+
+        #listaContatos{
+            list-style-type: none; /* DEFINE O TIPO DO MARCADOR DA LISTA */
+        }
+
+        #listaContatos i{
+            width: 30px;
+            color: #FAE4C5;
+        }
+
+        /* ESTILIZAÇÃO DOS H1, H2 E H3 */
+        h1, h2, h3{
+            text-transform: uppercase; /* TRANSFORMA O TEXTO EM MAIUSCULO */
+        }
+
+        #conteiner{
+            display: grid;
+            grid-template-columns: 30% auto; /* duas colunas, a primeira com 30% da largura da tela e a segunda com a largura automatica */ 
+            grid-column-gap: 20px;
+        }
+
+        /* separado por virgula você seleciona as duas ids*/
+        #barraLateral, #conteudo{
+            display: flex;
+            flex-direction: column; /* alinhaento vertical */
+            row-gap: 20px; /* entre cada linha da coluna uma distancia de 20px */
+        }
+
+        .cards{
+            font-family: "Montserrat", sans-serif;
+            border: 1px solid  #FAE4C5;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        /* todo h3 dentro de cards */
+        .cards h3{
+            font-family: "Hubballi", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CABEÇALHO COM O NOME E CARGO -->
+    <div id="cabecalho">
+        <div id="nome-Cargo">
+            <h1 id="nome">Douglas de Carvalho Dias</h1>
+            <h2 id="cargo">Desenvolvedor Full-Stack</h2>
+        </div>
+    </div>
+
+
+    <div id="conteiner">
+        <div id="barraLateral">
+
+            <!--CARD CONTATO -->
+            <div class="cards">
+                <h3 id="cardContatos">Contato</h3>
+                <ul id="listaContatos">
+                    <li><i class="fa-solid fa-envelope"></i>douglas.diasbc@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i>(11) 95475-5446</li>
+                    <li><i class="fa-solid fa-location-pin"></i>São Bernardo do Campo, SP</li>
+                </ul>
+            </div>
+
+            <!--CARD SKILLS -->
+            <div class="cards">
+                <h3 id="cardSkills">Skills</h3>
+                <ul id="listaSkills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <!--CARD FORMAÇÃO ACADEMICA -->
+            <div class="cards">
+                <h3 id="formacaoAcademica">Formacao Acadêmica</h3>
+                <ul id="listaFormacaoAcademica">
+                    <li>Desenvolvedor Full-Stack</li>
+                    <li>Técnico em Desesnvolvimento de Sistemas</li>
+                </ul>
+            </div>
+
+            <!--CARD LINK -->
+            <div class="cards">
+                <h3 id="link">Link</h3>
+                <ul id="listaLink">
+                    <li><a href="https://www.linkedin.com/in/douglas-carvalho-dias/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="conteudo">
+            
+            <!--CARD SOBRE MIM -->
+            <div class="cards">
+                <h3 id="titulosSobreMim">Sobre Mim</h3>
+                <p id="textoSobreMim">Buscando uma transição de carreira para a área de Tecnologia da Informação. Estudante de Desenvolvimento Full-Stack e Técnico em Desenvolvimento de Sistemas. Profissional com 06 anos de experiência na área de faturamento, atuando no departamento de recuperação de despesas, emissão de faturas e apoio na emissão de notas fiscais. </p>
+            </div>
+
+            <!--CARD EXPERIENCIA PROFISSIONAL -->
+            <div class="cards">
+                <h3 id="tituloExperienciaProfissional">Experiências Profissionais</h3>
+                <p>
+                    <b>Pinheiro Neto Advogados - Março/2018 a Junho/2024</b><br>
+                    Busca ativa por recuperar e preparar documentos de despesas, calculando-se o real valor dos serviços prestados. Dentre as responsabilidades complementares, emissão de faturas de despesas e apoio em emissão de notas fiscais, além de contato com o cliente e solicitude em auxílio a equipe.
+                    <ul>
+                        <li>Assistente de Faturamento</li>
+                        <li>Auxiliar de Faturamento</li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Universidade Metodista de São Paulo - Abril/2015 a Agosto/2015</b><br>
+                    Realizar no Observatório Econômico da Universidade, as atividades de acompanhamento de pesquisas econômicas, atualização da base de dados e gerar gráficos em conformidade desta base.
+                    <ul>
+                        <li>Estagiário</li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Hewlett-Packar (HP) - Abril/2013 a Setembro/2014</b><br>
+                    Atendimento ao cliente, com o esclarecimento de dúvidas e fornecimento de informações solicitadas, bem como conferência de dados e atualização de cadastros requisitados.
+                    <ul>
+                        <li>Analista de Suporte ao Cliente</li>
+                    </ul>
+                </p>
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+
+</html>
